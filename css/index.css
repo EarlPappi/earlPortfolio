@@ -1,0 +1,29 @@
+body{
+    color: white;
+    height: 100vh;
+    position: relative;
+    padding-top: 20px;
+}
+
+.container{
+    vertical-align: middle;
+    background-color: aqua;
+    width: 1200px;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.menu{
+    width: 10%;
+    background-color: blue;
+
+}
+
+.bigger-img{
+    background: url(../img/img-bg.png) no-repeat;
+    background-size: cover;
+    width: 30%;
+    border: 2px red solid;
+    transform: scaleY(110%);
+}
