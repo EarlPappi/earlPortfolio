@@ -1,24 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root{
+:root {
     --clr-neon: hsl(317 100% 54%);
     --clr-bg: hsl(323 21% 16%);
 }
 
 body {
     color: white;
-    height: 100vh;
+    height: 87vh;
     position: relative;
     padding-top: 80px;
     font-family: 'Poppins', sans-serif;
+    background: url(../img/unnamed.jpg);
+    background-size: contain;
 }
 
 h1,
 h2,
 h3,
-p{
+p {
     margin: 0;
 }
+
 .container {
     vertical-align: middle;
     background-color: #1B1D1E;
@@ -43,10 +46,10 @@ p{
 
 .menu a {
     display: block;
-    color: white; 
+    color: white;
 }
 
-.menu a:hover, .menu a:active, .menu a:focus, .over-media i:hover{
+.menu a:hover, .menu a:active, .menu a:focus, .over-media i:hover {
     color: hsl(317 100% 54%);
     transition: all ease 500ms;
     text-shadow: 1px 1px 20px white;
@@ -54,7 +57,7 @@ p{
 }
 
 /* screen also main  */
-.screen{
+.screen {
     width: 65%;
     overflow: scroll;
     -ms-text-overflow: none;
@@ -64,18 +67,18 @@ p{
     scroll-snap-type: y mandatory;
 }
 
-.screen::-webkit-scrollbar{
+.screen::-webkit-scrollbar {
     display: none;
 }
-.menu-page{
+
+.menu-page {
     height: 100%;
     scroll-snap-align: start;
 }
 
-.inner-men{
+.inner-men {
     width: 80%;
     height: 80%;
-    border: red solid 2px;
     padding-top: 20px;
 
 }
@@ -90,7 +93,7 @@ p{
 }
 
 /* Black overlay on the background image */
-.overlay{
+.overlay {
     height: 100%;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.438);
@@ -99,23 +102,22 @@ p{
     justify-content: center;
 }
 
-.inner-over{
+.inner-over {
     position: absolute;
     bottom: 0;
-    text-align: center;    
+    text-align: center;
     padding-bottom: 60px;
 }
 
 /* content on the main container  */
-.inner-men{
+.inner-men {
     width: 80%;
     margin: 0 auto;
-    border: green solid 2px;
     margin-top: 50px;
 }
 
 /* media on the bg */
-.over-media{
+.over-media {
     display: flex;
     justify-content: space-between;
     width: 50%;
@@ -124,13 +126,13 @@ p{
 }
 
 /* media icon on the background */
-.over-media i{
+.over-media i {
     color: white;
     font-size: 1.3em;
     margin-top: 20px;
 }
 
-.inner-over h1{
+.inner-over h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 2.5em;
     letter-spacing: 0.2em;
@@ -138,22 +140,23 @@ p{
     font-weight: 900;
     text-align: center;
     border-radius: 4px;
-    outline: 4px solid hsl(317 100% 54%);
+    outline: 1px solid hsl(317 100% 54%);
     background-color: rgba(0, 0, 0, 0.39);
     margin-bottom: 10px;
 }
-.work-con{
+
+.work-con {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
 
-.card{
+.card {
     border: 2px white solid;
     border-radius: 5px;
 }
 
-.neon-btn{
+.neon-btn {
     font-size: 2em;
     color: var(--clr-neon);
     cursor: pointer;
@@ -164,4 +167,44 @@ p{
     border-radius: 0.25em;
 
     text-shadow: 0 0 0.25em hsl(0 0% 100% / 0.5);
+}
+
+/* home page content starts here */
+span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.hey {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.hidden {
+    font-size: 2em;
+    font-weight: 300;
+    color: #1B1D1E;
+    background-color: white ;
+    width: fit-content;
+}
+
+.earl {
+    font-size: 3.5em;
+    font-weight: 200;
+}
+
+
+.btn{
+    display: inline-block;
+    background-color: white;
+    text-decoration: none;
+    margin-top: 100px;
+    margin-right: 50px;
+    padding: 10px 15px ;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--clr-neon);
+    transition: ease-in 500ms;
 }
