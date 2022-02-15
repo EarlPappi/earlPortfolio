@@ -145,11 +145,7 @@ p {
     margin-bottom: 10px;
 }
 
-.work-con {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
+
 
 .card {
     border: 2px white solid;
@@ -176,11 +172,14 @@ span {
 }
 
 .hey {
+    text-align: center;
     font-weight: 700;
     font-size: 1.5em;
 }
 
 .hidden {
+    margin: 0 auto;    
+    text-align: center;
     font-size: 2em;
     font-weight: 300;
     color: #1B1D1E;
@@ -189,8 +188,9 @@ span {
 }
 
 .earl {
-    font-size: 3.5em;
+    font-size: 5.5em;
     font-weight: 200;
+    text-align: center;
 }
 
 
@@ -207,4 +207,79 @@ span {
 .btn:hover{
     background-color: var(--clr-neon);
     transition: ease-in 500ms;
+}
+
+.menu-btns{
+    text-align: center;
+}
+
+
+
+/* About content starts here */
+.about-content{
+    text-align: center;
+}
+
+.about-content h1, .h1-heading{
+    font-size: 5.5em;
+    font-weight: 100;
+    text-align: center;
+}
+
+.about-texts{
+    margin-top: 10px;
+    line-height: 2em;
+}
+
+
+/* work content starts here */
+.work-content .hidden{
+    font-size: 1.3em;
+    margin-bottom: 20px;
+
+}
+
+.work-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+
+.work-card{
+    outline: var(--clr-neon) 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.work-card-inner{
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.849);
+    outline: var(--clr-neon) 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.work-card-inner a{
+    text-decoration: none;
+    background-color: white;
+    padding: 10px;
+}
+
+.work-card-inner a:hover{
+    background-color: var(--clr-neon);
 }
