@@ -14,12 +14,12 @@ console.log(workLink);
 
 
 workCard.forEach(function (card) {
-    card.addEventListener('mouseenter', function (e) {
+    card.addEventListener('mouseover', function (e) {
         workLink.forEach(function (link) {
             if (link.style.display == 'none') {
                 link.style.display = 'block'
             } else {
-                link.style.display = 'none';
+                link.style.display = 'none';    
             }
         }
         );
