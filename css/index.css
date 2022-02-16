@@ -262,6 +262,7 @@ span {
 
 .work-card-inner{
     display: none;
+    top: 0;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.849);
     outline: var(--clr-neon) 1px solid;
@@ -272,9 +273,12 @@ span {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    text-align: center;
+    gap: 20px;
 }
 
 .work-card-inner a{
+    display: inline-block;
     text-decoration: none;
     background-color: white;
     padding: 10px;
