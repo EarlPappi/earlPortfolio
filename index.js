@@ -15,19 +15,11 @@ console.log(workLink);
 
 workCard.forEach(function (card) {
     card.addEventListener('mouseover', function (e) {
-        workLink.forEach(function (link) {
-            if (link.style.display == 'none') {
-                link.style.display = 'block'
-            } else {
-                link.style.display = 'none';    
-            }
-        }
-        );
-
-        //         if(workLink.getElementsByClassName.display == 'none'){
-        //             workLink.getElementsByClassName.display == 'block'
-        // 
-        //             console.log(workLink)
-        //         }
+          e.target.children[1].style.display = 'flex'
     });
+
+    card.addEventListener('mouseleave', function(e){
+        e.target.children[1].style.display = 'none'
+    })
+
 });
