@@ -22,6 +22,9 @@ p {
     margin: 0;
 }
 
+
+
+
 .container {
     vertical-align: middle;
     background-color: #000000;
@@ -65,6 +68,8 @@ p {
     scrollbar-width: none;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    /* background: url(../img/ellipse-bg.png) no-repeat;
+    background-position: top center; */
 }
 
 .screen::-webkit-scrollbar {
@@ -166,98 +171,125 @@ p {
 }
 
 /* home page content starts here */
-span {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.hey {
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.5em;
-}
-
-.hidden {
-    margin: 0 auto;    
-    text-align: center;
-    font-size: 2em;
-    font-weight: 300;
-    color: #1B1D1E;
-    background-color: white ;
-    width: fit-content;
-}
-
-.earl {
-    font-size: 5.5em;
-    font-weight: 200;
-    text-align: center;
-}
-
-
-.btn{
-    display: inline-block;
-    background-color: white;
-    text-decoration: none;
-    margin-top: 100px;
-    margin-right: 50px;
-    padding: 10px 15px ;
-    cursor: pointer;
-}
-
-.btn:hover{
-    background-color: var(--clr-neon);
-    transition: ease-in 500ms;
-}
-
-.menu-btns{
-    text-align: center;
-}
-
-
-
-/* About content starts here */
-.about-content{
-    text-align: center;
-}
-
-.about-content h1, .h1-heading{
-    font-size: 5.5em;
-    font-weight: 100;
-    text-align: center;
-}
-
-.about-texts{
-    margin-top: 10px;
-    line-height: 2em;
-}
-
-
-/* work content starts here */
-.work-content .hidden{
-    font-size: 1.3em;
-    margin-bottom: 20px;
-
-}
-
-.work-container {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-
-
-.work-card{
-    outline: var(--clr-neon) 1px solid;
-    padding: 10px;
-    border-radius: 10px;
-    width: 250px;
-    height: 50px;
+.home-menu-con{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.3em;
+    border-radius: 500px;
+    width: 60px;
+    height: 60px;
+    background-color: #ff3c0086;
     position: relative;
 
+}
+
+.home-menu-inner{
+    background-color: #FF3D00;
+    border-radius: 500px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+.home-content h1{
+    font-size: 4.0em;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+span{
+    color: #FF3D00;
+}
+
+.home-content p{
+    width: 90%;
+    font-size: 1.4em;
+    line-height: 200%;
+    font-weight: 500;
+}
+
+.home-link{
+    display: flex;
+    width: 60%;
+    border-radius: 30px;
+    margin-top: 40px;
+    position: relative;
+    align-items: center;
+}
+
+.div-link{    
+    outline: 2px solid #FF3D00;
+    padding: 15px;
+    border-radius: 30px;
+    padding-right: 200px;
+    width: 70%;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+
+}
+
+.icon-div{
+    background-color: #FF3D00;
+    padding: 15px 20px 15px 20px;
+    border-radius: 500px;
+    margin-left: -50px;
+    box-shadow: 1px 1px 30px #FF3D00,
+    1px 1px 30px #FF3D00
+    ;
+}
+
+
+
+
+
+/* About Me page Starts here */
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.over-under-con{
+    position: relative;
+    width: 80%;
+    padding: 0;
+    text-align: center;
+    height: 120px;
+}
+
+.under-h1{
+    width: 100%;
+    text-align: center;
+    top: 0;
+    position: absolute;
+    font-size: 5.0em;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.11);
+}
+
+.over-h1{
+    top: 10px;
+    position: absolute;
+    font-size: 4.0em;
+    font-weight: 800;    
+    width: 100%;
+    text-align: center;
+    z-index: 22;
+}
+
+
+
+
+
+/* work page starts here */
+.work-container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .work-card-inner{
@@ -271,18 +303,30 @@ span {
     width: 250px;
     height: 50px;
     align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    gap: 3px;
+    justify-content: center;
+    gap: 10px;
 }
 
 .work-card-inner a{
-    display: inline-block;
     text-decoration: none;
-    background-color: white;
     padding: 10px;
+    background-color: white;
+    border-radius: 5px;
 }
 
 .work-card-inner a:hover{
-    background-color: var(--clr-neon);
+    background-color: #FF3D00;
+    color: white;
+}
+
+.work-card{
+    outline: var(--clr-neon) 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
