@@ -22,6 +22,10 @@ p {
     margin: 0;
 }
 
+*{
+    transition: all ease 700ms;
+}
+
 
 
 
@@ -207,7 +211,8 @@ span{
 
 .home-content p{
     width: 90%;
-    font-size: 1.4em;
+    height: 200px;
+    font-size: 1.2em;
     line-height: 200%;
     font-weight: 500;
 }
@@ -233,6 +238,14 @@ span{
 
 }
 
+.flexy{
+    display: flex;
+    gap: 10px;
+}
+
+.div-link-alt{
+    text-align: end;
+}
 .icon-div{
     background-color: #FF3D00;
     padding: 15px 20px 15px 20px;
@@ -241,6 +254,10 @@ span{
     box-shadow: 1px 1px 30px #FF3D00,
     1px 1px 30px #FF3D00
     ;
+}
+
+.icon-div-alt{
+    margin-left: -100%;
 }
 
 
@@ -329,4 +346,79 @@ span{
     justify-content: center;
     align-items: center;
     position: relative;
+}
+
+
+.upper-lower-con{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: white;
+}
+
+.upper-div{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: #FF3D00;
+    z-index: 122;
+}
+
+.lower-div{
+    position: absolute;
+}
+
+.mb-10{
+    margin-bottom: 5px;
+}
+
+.center{
+    text-align: center;
+}
+
+
+/* contact me page */
+input, textarea{
+    color: #FF3D00;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: #363636 2px solid;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    outline: none;
+}
+
+textarea{
+    height: 80px;
+    font: 'Poppins', sans-serif;
+}
+
+input:hover, textarea:hover, textarea:focus, textarea:active{
+    border-color: #FF3D00;
+}
+
+button{
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FF3D00;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font: inherit;
+}
+
+button:hover{
+    transition: all ease-in 500ms;
+    background-color: transparent;
+    color: #FF3D00;
+    outline: #FF3D00 2px solid;
+}
+
+input::placeholder, textarea::placeholder{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
 }
