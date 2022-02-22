@@ -23,7 +23,7 @@ p {
 }
 
 *{
-    transition: all ease 700ms;
+    transition: all ease 400ms;
 }
 
 
@@ -252,8 +252,7 @@ span{
     padding: 15px 20px 15px 20px;
     border-radius: 500px;
     margin-left: -50px;
-    box-shadow: 1px 1px 30px #FF3D00,
-    1px 1px 30px #FF3D00
+    box-shadow: 1px 1px 30px #FF3D00
     ;
 }
 
