@@ -20,6 +20,6 @@ workCard.forEach(function (card) {
 
     card.addEventListener('mouseleave', function(e){
         e.target.children[1].style.display = 'none'
-    })
+    });
 
 });
